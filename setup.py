@@ -2,10 +2,12 @@ import setuptools
 
 with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
+with open("VERSION", "r", encoding="utf-8") as fh:
+    version = fh.read()
 
 setuptools.setup(
     name="toytool",
-    version="0.0.1",
+    version=version,
     author="HandsomeBoy",
     author_email="putaoisapig@163.com",
     description="toy-tool",
