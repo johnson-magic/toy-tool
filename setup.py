@@ -3,7 +3,7 @@ import setuptools
 with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
-def read_version()
+def read_version():
     import subprocess
     result = subprocess.run(['ls', '-la'], capture_output=True, text=True)
     print(result.stdout)
