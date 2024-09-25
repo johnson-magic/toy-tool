@@ -15,6 +15,8 @@ class TestReadMethods(unittest.TestCase):
         path_test_data = os.path.join(current_directory, "./data/color.jpg")
         img_pillow = ReadImage(path_test_data, "pillow")
         self.assertTrue(isinstance(img_pillow, Image.Image))
+        img_pillow.close()  # advice to explicitly destroy object.
 
         img_opencv = ReadImage(path_test_data, "opencv")
         self.assertTrue(isinstance(img_opencv, np.ndarray))
+        
