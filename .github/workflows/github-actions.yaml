@@ -13,4 +13,4 @@ jobs:
     - name: Check coding standard
       run: flake8 .
     - name: Unittest
-      run: python -m uinttest tests
+      run: python -m unittest tests
