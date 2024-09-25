@@ -2,15 +2,16 @@ import cv2
 import typing
 from PIL import Image
 
-def ReadImage(ImagePath: str, Mode: str = 'cv2') -> typing.Any:
+
+def ReadImage(imagepath: str, mode: str = 'cv2') -> typing.Any:
     """Read image in one manner of opencv or pillow.
 
     Args:
-        ImagePath: img file path.
-        Mode: one of ['pillow', 'cv2'].
+        imagepath: img file path.
+        mode: one of ['pillow', 'cv2'].
     """
     if mode == 'pillow':
-        img = Image.open(ImagePath)
+        img = Image.open(imagepath)
     elif mode == "opencv":
-        img = cv2.imread(ImagePath)
+        img = cv2.imread(imagepath)
     return img

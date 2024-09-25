@@ -3,6 +3,7 @@ import setuptools
 with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
+
 def read_version():
     import subprocess
     result = subprocess.run(['ls', '-la'], capture_output=True, text=True)
@@ -10,6 +11,7 @@ def read_version():
     with open("VERSION", "r", encoding="utf-8") as fh:
         version = fh.read()
     return version
+
 
 setuptools.setup(
     name="toytool",
