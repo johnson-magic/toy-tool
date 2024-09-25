@@ -31,6 +31,9 @@ jobs:
         python -m pip install --upgrade pip
         pip install build
         pip install flake8
+        pip install pillow
+        pip install opencv-python
+        pip install opencv-python-headless
         pip install numpy
     - name: Check coding standard
       run: flake8 .
