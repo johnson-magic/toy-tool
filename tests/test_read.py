@@ -19,4 +19,3 @@ class TestReadMethods(unittest.TestCase):
 
         img_opencv = ReadImage(path_test_data, "opencv")
         self.assertTrue(isinstance(img_opencv, np.ndarray))
-        
