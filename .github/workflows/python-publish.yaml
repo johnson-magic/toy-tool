@@ -34,7 +34,7 @@ jobs:
     - name: Check coding standard
       run: flake8 .
     - name: Unittest
-      run: python -m unittest tests
+      run: python -m unittest discover tests
     - name: Update VERSION file
       run: echo "${{ github.event.release.tag_name }}" > VERSION
     - name: Build package
